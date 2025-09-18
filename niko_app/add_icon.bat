@@ -1,0 +1,1 @@
+D:\Portable\rcedit-x64.exe target\release\niko_app.exe --set-icon niko.ico

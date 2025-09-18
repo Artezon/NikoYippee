@@ -1,0 +1,18 @@
+[package]
+name = "niko_app"
+version = "1.0.0"
+edition = "2024"
+build = "build.rs"
+
+[dependencies]
+rand = "0.9.2"
+rodio = "0.21.1"
+rust-embed = "8.7.2"
+slint = "1.12.1"
+
+[build-dependencies]
+slint-build = "1.12.1"
+
+[profile.release]
+lto = true
+codegen-units = 1

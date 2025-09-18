@@ -1,0 +1,47 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:NikoTheCompanion.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:NikoTheCompanion.Views"
+        x:Class="NikoTheCompanion.Views.MainWindow"
+        Icon="/Assets/af.png"
+        Title="Niko :3"
+		Width="260" Height="320"
+		MinWidth="260" MinHeight="320"
+		TransparencyLevelHint="AcrylicBlur"
+		ExtendClientAreaToDecorationsHint="True">
+
+	<Window.Styles>
+		<Style Selector="Window">
+			<Setter Property="Background">
+				<Setter.Value>
+					<SolidColorBrush
+						Color="{DynamicResource SystemAltHighColor}"
+						Opacity="0.5" />
+				</Setter.Value>
+			</Setter>
+		</Style>
+	</Window.Styles>
+
+	<Border Padding="20,40,20,20">
+		<Grid HorizontalAlignment="Center"
+			  VerticalAlignment="Center"
+			  RowDefinitions="*,20,Auto">
+			<Image x:Name="Niko"
+				   Source="/Assets/niko.png"
+				   Stretch="Uniform"
+				   RenderOptions.BitmapInterpolationMode="None"
+				   Grid.Row="0"/>
+
+			<Button x:Name="YippeeButton"
+					Content=":3"
+					Width="40"
+					Height="40"
+					HorizontalAlignment="Center"
+					HorizontalContentAlignment="Center"
+					VerticalContentAlignment="Center"
+					Grid.Row="2"/>
+		</Grid>
+	</Border>
+</Window>
